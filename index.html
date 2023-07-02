@@ -6,14 +6,21 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
  <body>
-  <div class=index-div>
-    <h1>Hello World</h1>
-    <h2><?=name?>さん、こんにちは！</h2>
-  </div>
-  <div class=mission>
-    <p>mission1</p>
-    <p>mission2</p>
-  </div>
-  
+   <div class="form-wrapper">
+     <h1>ログイン</h1>
+     <form method="post" action="https://script.google.com/macros/s/AKfycbz39PTh26H9HtB1B3tog-9N6Ak0Qp3TJynX_9Z7WZHOIE-4EIl4eI9fctet04nMOr-__Q/exec">
+       <div class="form-item">
+         <label for="name"></label>
+         <input type="name" name="name" required="required" placeholder="名前"></input>
+       </div>
+       <div class="form-item">
+         <label for="password"></label>
+         <input type="password" name="password" required="required" placeholder="パスワード"></input>
+       </div>
+       <div class="button-panel">
+         <input type="submit" class="button" title="Login" value="Login"></input>
+       </div>
+     </form>
+   </div>
  </body>
 </html>
