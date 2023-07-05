@@ -198,14 +198,20 @@ a.btn-border:active:before {
   bottom: -1px;
 }
 
-/*background */
+/*Mission */
 .background-square {
     border-radius: 30px;
     border: 0.5px solid #ffffff;
     background-color: #ffeb51;
     padding: 15px 15px;
-    min-width: 50px;
+    min-width: 25px;
     min-height: 50px;
-    max-width: 300px;
-    max-height: 250px;
+    max-width: 275px;
+    max-height: 225px;
   }
+
+.mission-char {
+  text-align: center;
+     padding: 0.5em 0;
+  color: #120303;
+}
