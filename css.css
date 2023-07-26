@@ -1,6 +1,6 @@
     /* Fonts */
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);  
-    
+    @import url(https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap);
     
     /* Simple Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -54,148 +54,11 @@
      border-bottom: 2px solid #c0c0c0;
      outline: none;
     }
-    
-    .button-panel {
-     margin: 2em 0 0;
-     width: 100%;
-    }
-    
-    .button-panel .button {
-     background: #f16272;
-     border: none;
-     color: #fff;
-     cursor: pointer;
-     height: 50px;
-     font-family: 'Open sans', sans-serif;
-     font-size: 1.2em;
-     letter-spacing: 0.05em;
-     text-align: center;
-     text-transform: uppercase;
-     transition: background 0.3s ease-in-out;
-     width: 100%;
-    }
-    
-    .button:hover {
-     background: #ee3e52;
-    }
-
-    /*button */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
+  
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 40%;
-}
-
-.btn,
-a.btn,
-button.btn {
-  
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
-}
-
-a.btn-border {
-  margin-bottom: 6px;
-  padding: 0;
-
-  -webkit-transition: all 0.3s;
-
-  transition: all 0.3s;
-
-  border-radius: 0;
-}
-
-a.btn-border span {
-  position: relative;
-
-  display: block;
-
-  padding: 1.25rem 3rem;
-
-  color: #000;
-  border: 2px solid #000;
-  border-radius: 0.5rem;
-  background: #fff;
-}
-
-a.btn-border:before {
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-
-  display: block;
-
-  width: 100%;
-  height: 10px;
-
-  content: "";
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-
-  border: 2px solid #000;
-  border-top: 1px solid #000;
-  border-radius: 0 0 0.5rem 0.5rem;
-  background-image: -webkit-repeating-linear-gradient(
-    135deg,
-    #000,
-    #000 1px,
-    transparent 2px,
-    transparent 5px
-  );
-  background-image: repeating-linear-gradient(
-    -45deg,
-    #000,
-    #000 1px,
-    transparent 2px,
-    transparent 5px
-  );
-  background-size: 7px 7px;
-
-  -webkit-backface-visibility: hidden;
-
-  backface-visibility: hidden;
-}
-
-a.btn-border:hover {
-  -webkit-transform: translate(0, 3px);
-  transform: translate(0, 3px);
-}
-
-a.btn-border:hover:before {
-  bottom: -5px;
-}
-
-a.btn-border:active {
-  -webkit-transform: translate(0, 7px);
-  transform: translate(0, 7px);
-}
-
-a.btn-border:active:before {
-  bottom: -1px;
 }
 
 /*Mission */
@@ -203,15 +66,45 @@ a.btn-border:active:before {
     border-radius: 30px;
     border: 0.5px solid #ffffff;
     background-color: #ffeb51;
-    padding: 15px 15px;
+    padding: 3em 1em;
     min-width: 25px;
     min-height: 50px;
-    max-width: 275px;
-    max-height: 225px;
+    max-width: 280px;
+    max-height: 400px;
   }
 
 .mission-char {
   text-align: center;
-     padding: 0.5em 0;
+     padding: 1em 0;
   color: #120303;
+  font-family: "RocknRoll One";
+  font-size: 2em;
+}
+
+.mission-char p {
+  font-size: 60%;
+  padding: 1.1em 1.1em 3em 0;
+}
+
+a.mission-button{
+  color: #ffffff;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: #333;
+  padding: 1em 2em;
+  border-radius: 6px;
+  transition: .3s;
+}
+a.mission-button:hover {
+  background: #13c3ac;
+}
+a.mission-button.pressed {
+  color: #3333336c;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 1em 2em;
+  border-radius: 6px;
+  transition: .5s ease-in-out;
+  
+  background: #b8b8b8;
 }

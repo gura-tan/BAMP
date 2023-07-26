@@ -17,17 +17,24 @@
   
   <nav align="left">
     <div class="background-square" align="center">
-      <span>mission1:()</span>
-      <br>
-      <a class="btn btn-border" onclick="clickDisplayAlert()"><span>PUSH!</span></a>
+      <span class="mission-char">Greetings!<br><p>好きなだけあいさつする。もちろん1回以上</p>
+      <a class="mission-button" onclick="buttonPressed()">CLEAR!</a></span>
     </div>
   </nav>
-  
+
   </div>
   
   <script>
-    function clickDisplayAlert() {
-      alert("ボタンがクリックされました！");
+    function buttonPressed() {
+      //alert("ボタンがクリックされました！");
+      let button = document.getElementsByClassName("mission-button");
+      for(var i = 0;i < button.length ;i++)
+      {
+        //alert("debug:for!");
+        button.item(i).classList.toggle("pressed");
+      }
+      //button.classList.toggle("pressed");
+      
     }
   </script>
  </body>
